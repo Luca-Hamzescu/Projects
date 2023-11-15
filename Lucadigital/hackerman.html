@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luca Hamzescu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="index_style.css">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</head>
+<body>
+  <script>
+      async function main() {
+        let pyodide = await loadPyodide();
+        pyodide.runPython(`print('Hello world, from the browser!')`);
+      };
+      main();
+    </script>
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <div class="justify-content-end" id="navbarNav">
+        <ul class="navbar-nav list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact me</a>
+          </li>
+          <div class="nav-item ml-auto">
+            <p id="version">v0.6</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img id="logo" src="misc/hackerman_logo_.png" alt="HACKERMAN" width="600rem" height="150rem">
+        <button class="btn btn-primary btn-lg" href="/experimental/experimental.html">Experimental</button>
+        <div class="text-center" id="spacer">
+        </div>
+        <div class="text-center">
+          <div id="terminal">
+            <py-script>
+              print(int(input("input: "))*2)
+            </py-script>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

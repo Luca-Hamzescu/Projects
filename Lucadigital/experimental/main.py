@@ -1,0 +1,1 @@
+print(int(input("input: ")*2) + "\n")

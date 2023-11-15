@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luca Hamzescu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <div class="justify-content-end" id="navbarNav">
+        <ul class="navbar-nav list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact me</a>
+          </li>
+          <div class="nav-item ml-auto">
+            <p id="version">v0.6</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Contact me</h1>
+        <div class="fcf-body">
+          <div id="fcf-form">
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+              <div class="fcf-form-group">
+                <div class="fcf-input-group">
+                  <div class="fcf-input-container">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required placeholder="Name">
+                  </div>
+                  <div class="fcf-input-container">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required placeholder="Email adress">
+                  </div>
+                </div>
+              </div>
+              <div class="fcf-form-group">
+                <div class="fcf-input-group">
+                  <textarea id="Message" name="Message" class="fcf-form-control" required placeholder="Message" rows="6" maxlength="3000" required></textarea>
+                </div>
+              </div>
+              <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
